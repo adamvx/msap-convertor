@@ -1,0 +1,15 @@
+version: "3.8"
+
+services: 
+  convertor:
+    image: convertor
+    build: .
+    container_name: convertor
+    restart: unless-stopped
+    expose:
+      - 80
+    network_mode: bridge
+    environment: 
+      - VIRTUAL_HOST=convertor.adamvician.sk, www.convertor.adamvician.sk
+      - LETSENCRYPT_HOST=convertor.adamvician.sk, www.convertor.adamvician.sk
+      - LETSENCRYPT_EMAIL=adamvician@gmail.com
