@@ -10,3 +10,7 @@ Pre spustenie v lokalnom rezime spustime nasledovne prikazy. Pre spustenie je po
 npm install
 npm run start
 ```
+
+## Live demo
+
+Live demo je dostupne na [tomto odkaze](https://convertor.adamvician.sk)
