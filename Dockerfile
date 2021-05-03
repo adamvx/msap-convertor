@@ -2,7 +2,7 @@ FROM node:buster as builder
 
 WORKDIR /usr/src/app
 COPY . .
-RUN npm run install
+RUN npm install
 RUN npm run build
 
 FROM nginx:alpine
